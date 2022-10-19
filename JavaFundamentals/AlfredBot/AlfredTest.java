@@ -1,0 +1,50 @@
+public class AlfredTest {
+    /*
+    * This main method will always be the launch point for a Java application
+    * For now, we are using the main to test all our 
+    * AlfredQuotes methods.
+    */
+    public static void main(String[] args) {
+        // Make an instance of AlfredQuotes to access all its methods.
+        AlfredQuotes alfredBot = new AlfredQuotes();
+        
+        // Make some test greetings, providing any necessaury data
+        String testGreeting = alfredBot.basicGreeting();
+        String testGuestGreeting = alfredBot.guestGreeting("Beth Kane");
+        String testGuestGreet = alfredBot.guestGreeting("Beth Kane");
+        System.out.println(testGuestGreet);
+        String testDateAnnouncement = alfredBot.dateAnnouncement();
+        String testDateAnnounc = alfredBot.dateAnnouncement();
+        System.out.println(testDateAnnounc);
+
+        
+        String alexisTest = alfredBot.respondBeforeAlexis(
+                "Alexis! Play some low-fi beats.");
+        String alexisTestFirst = alfredBot.respondBeforeAlexis(
+                "Alexis! Play some low-fi beats.");
+        System.out.println(alexisTestFirst);
+        String alfredTest = alfredBot.respondBeforeAlexis(
+            "I can't find my yo-yo. Maybe Alfred will know where it is.");
+        String alfredTestSecound = alfredBot.respondBeforeAlexis(
+            "I can't find my yo-yo. Maybe Alfred will know where it is.");
+        System.out.println(alfredTestSecound);
+        String notRelevantTest = alfredBot.respondBeforeAlexis(
+            "Maybe that's what Batman is about. Not winning. But failing.."
+        );
+        String notRelevantTestThird = alfredBot.respondBeforeAlexis(
+            "Maybe that's what Batman is about. Not winning. But failing.."
+        );
+        System.out.println(notRelevantTestThird);
+
+        
+        // Print the greetings to test.
+        System.out.println(testGreeting);
+        
+        // Uncomment these one at a time as you implement each method.
+        // System.out.println(testGuestGreeting);
+        // System.out.println(testDateAnnouncement);
+        // System.out.println(alexisTest);
+        // System.out.println(alfredTest);
+        // System.out.println(notRelevantTest);
+    }
+}
