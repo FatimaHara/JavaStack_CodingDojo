@@ -3,7 +3,7 @@ public class Order {
     private  String name ;
     private double total ;
     private boolean ready ;
-   private ArrayList<ItemOrder> items =new ArrayList<ItemOrder> ;
+   private ArrayList<ItemOrder> items =new ArrayList<ItemOrder>() ;
 ;
 
     public Order() {
