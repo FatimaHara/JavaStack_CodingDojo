@@ -8,6 +8,16 @@ public class ZooTest {
 		gorillaObj.eatBananas();
 		gorillaObj.climb();
 		System.out.println(gorillaObj.displayEnergy());
+		Bat batObj=new Bat();
+		batObj.attackTown();
+		batObj.attackTown();
+		batObj.attackTown();
+		batObj.eatHumans();
+		batObj.eatHumans();
+		batObj.fly();
+		batObj.fly();
+		batObj.displayEnergy();
+
 		
 	}
 
