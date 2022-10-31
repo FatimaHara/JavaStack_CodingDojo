@@ -58,11 +58,10 @@ public class Order {
         this.items =new ArrayList<>();
     }
 
-    public void addItem(ArrayList<ItemOrder> items){
-            this.items =new ArrayList<>();
-            this.items.addAll(items);
-            // this.total+=items.getPrice();
-            
+    public void addItem(ItemOrder items){
+            // this.items =new ArrayList<>();
+            this.items.add(items);
+            this.total+=items.getPrice();
     }
     public void getStatusMessage(){
         if (this.ready){
@@ -88,5 +87,7 @@ public class Order {
     for(int i =0;i< this.items.size();i++){
         totalAmount+=items.get(i).getPrice();
    }
+   System.out.println(this.items.size());
    return totalAmount ;
+}
 }

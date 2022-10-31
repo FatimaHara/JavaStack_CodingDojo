@@ -32,19 +32,19 @@ public class TestOrders {
         // Application Simulations
         // Use this example code to test various orders' updates
         System.out.printf("Name: %s\n", Order1.name);
-        System.out.printf("Total: %s\n", Order1.total);
-        System.out.printf("Ready: %s\n", Order1.ready);
+        // System.out.printf("Total: %s\n", Order1.total);
+        // System.out.printf("Ready: %s\n", Order1.ready);
         Order2.items.add(ItemOne);
-        Order2.total+=ItemOne.price;
-        Order3.items.add(ItemForth);
-        Order3.total+=ItemForth.price;
-        Order4.items.add(ItemTwo);
-        Order4.total+=ItemTwo.price;
-        Order1.ready=true;
-        Order4.items.add(ItemTwo);
-        Order4.items.add(ItemTwo);
-        Order4.total+=ItemTwo.price*2;
-        Order2.ready =true ;
+        // Order2.total+=ItemOne.price;
+        // Order3.items.add(ItemForth);
+        // Order3.total+=ItemForth.price;
+        // Order4.items.add(ItemTwo);
+        // Order4.total+=ItemTwo.price;
+        // Order1.ready=true;
+        // Order4.items.add(ItemTwo);
+        // Order4.items.add(ItemTwo);
+        // Order4.total+=ItemTwo.price*2;
+        // Order2.ready =true ;
 
     }
 }

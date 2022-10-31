@@ -9,9 +9,10 @@ public class TestOrders {
         Order orderWithName3 = new Order("Harahsheh");
         ItemOrder itemOne = new ItemOrder("Computer", 1000);
         ItemOrder itemTwo = new ItemOrder("HeadPhone", 500);
-        orderGuest1.addItem(itemOne);
-        orderWithName3.addItem(itemTwo);
-        orderWithName3.display();
-
+        orderWithName3.addItem(itemOne);
+        orderWithName3.display();    
+        System.out.println(orderWithName3.getOrderTotal()) ;
+        orderWithName1.setReady(true);
+        orderWithName1.getStatusMessage();
     }
 }
